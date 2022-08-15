@@ -44,17 +44,17 @@
     "rimraf": "^3.0.2"
   },
   "peerDependencies": {
+    "@carpenjk/hooks": "github:carpenjk/hooks",
+    "@carpenjk/prop-x": "^1.0.2",
+    "@carpenjk/themeweaver": "^1.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.1.1",
-    "@carpenjk/hooks": "github:carpenjk/hooks",
-    "@carpenjk/prop-x": "github:carpenjk/prop-x",
-    "@carpenjk/themeweaver": "github:carpenjk/themeweaver"
+    "styled-components": "^5.1.1"
   },
   "optionalDependencies": {
     "formik": "^2.2.9",
-    "react-select": "^4.3.1",
-    "react-datepicker": "^3.8.0"
+    "react-datepicker": "^3.8.0",
+    "react-select": "^4.3.1"
   },
   "publishConfig": {
     "access": "public"
