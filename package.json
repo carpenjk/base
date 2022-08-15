@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "@carpenjk/base",
   "version": "1.0.0",
-  "description": "This a description",
+  "description": "A library of base level react components.",
   "main": "lib/index.js",
   "scripts": {
     "prebuild": "rimraf lib",
@@ -11,18 +11,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carpenjk/project-name.git"
+    "url": "git+https://github.com/carpenjk/base.git"
   },
   "keywords": [
-    "keyword1",
-    "keyword2"
+    "input",
+    "button",
+    "react",
+    "base",
+    "header",
+    "footer",
+    "card",
+    "themeweaver"
   ],
   "author": "Jeremy Carpenter",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/carpenjk/project-name/issues"
+    "url": "https://github.com/carpenjk/base/issues"
   },
-  "homepage": "https://github.com/carpenjk/project-name#readme",
+  "homepage": "https://github.com/carpenjk/base#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.10",
@@ -38,14 +44,20 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "styled-components": "^5.1.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.1.1"
   },
   "peerDependencies": {
-    "styled-components": "^5.1.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.1.1",
+    "@carpenjk/hooks": "github:carpenjk/hooks"
+  },
+  "optionalDependencies": {
+    "formik": "^2.2.9",
+    "react-select": "^4.3.1",
+    "react-datepicker": "^3.8.0"
   },
   "publishConfig": {
     "access": "public"
