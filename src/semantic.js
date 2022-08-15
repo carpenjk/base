@@ -1,2 +1,2 @@
-export { default as Header } from './components/layout/Header'
-export { default as Section } from './components/layout/Section'
+export { default as Header } from './components/semantic/Header'
+export { default as Section } from './components/semantic/Section'
