@@ -1,17 +1,17 @@
-import React from "react"; { useRef, forwardRef } from 'react';
+import React, { useRef, forwardRef } from 'react'
 
 const withUseRef = (Component) => {
-  function WithUseRef(props) {
-    const innerRef = useRef(null);
-    const { forwardedRef, ...rest } = props;
+  function WithUseRef (props) {
+    const innerRef = useRef(null)
+    const { forwardedRef, ...rest } = props
 
-    return <Component ref={forwardedRef} innerRef={innerRef} {...rest} />;
+    return <Component ref={forwardedRef} innerRef={innerRef} {...rest} />
   }
-  WithUseRef.displayName = `withUseRef(${Component.displayName})`;
+  WithUseRef.displayName = `withUseRef(${Component.displayName})`
 
   return forwardRef((props, ref) => (
     <WithUseRef forwardedRef={ref} {...props} />
-  ));
-};
+  ))
+}
 
-export default withUseRef;
+export default withUseRef
