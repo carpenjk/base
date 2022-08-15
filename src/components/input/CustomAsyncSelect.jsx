@@ -18,7 +18,7 @@ import {
 } from '@carpenjk/themeweaver'
 import { getProp, breakpoint } from '@carpenjk/prop-x/css'
 import DropDownIncrArrow from '../button/DropDownIncrArrow'
-import withUseRef from '../../WithUseRef'
+import withUseRef from '../WithUseRef'
 import InputWrapper from './InputWrapper'
 import InsetPlaceholder from './InsetPlaceholder'
 
