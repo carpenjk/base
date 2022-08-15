@@ -14,7 +14,7 @@ import {
 } from '@carpenjk/themeweaver'
 import { getProp, breakpoint } from '@carpenjk/prop-x/css'
 import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
+// import 'react-datepicker/dist/react-datepicker.css'
 import InputLabel from './InputLabel'
 import InputWrapper from './InputWrapper'
 import InsetPlaceholder from './InsetPlaceholder'
