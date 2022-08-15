@@ -1,4 +1,4 @@
-import { useRef, forwardRef } from 'react';
+import React from "react"; { useRef, forwardRef } from 'react';
 
 const withUseRef = (Component) => {
   function WithUseRef(props) {
