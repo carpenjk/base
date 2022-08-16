@@ -1,6 +1,6 @@
 export { default as ActionButton } from './components/button/ActionButton'
 export { default as ActionLInk } from './components/button/ActionLink'
-export { default as BackButton } from './components/button/BackButton'
+export { default as NXBackButton } from './components/button/NXBackButton'
 export { default as CloseButton } from './components/button/CloseButton'
 export { default as DropDownIncrArrow } from './components/button/DropDownIncrArrow'
 export { default as ImgButton } from './components/button/ImgButton'

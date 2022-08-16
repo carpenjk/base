@@ -14,16 +14,16 @@ const StyledContainer = styled.div`
   }
 `
 
-const BackButton = () => {
+const NXBackButton = ({ children }) => {
   const router = useRouter()
   return (
     <StyledContainer>
       <OverlayNavButton onClick={router.back}>
         <img src="../static/assets/misc/back arrow.svg" alt="back arrow" />
-        back
+        {children || 'back'}
       </OverlayNavButton>
     </StyledContainer>
   )
 }
 
-export default BackButton
+export default NXBackButton
