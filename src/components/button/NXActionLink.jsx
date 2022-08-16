@@ -75,13 +75,13 @@ const StyledLink = styled.a`
   `}
 `
 
-const ActionLink = ({ variant, children, href }) => (
+const NXActionLink = ({ variant, children, href }) => (
   <Link href={href}>
     <StyledLink semKey={`button.${variant}`}>{children}</StyledLink>
   </Link>
 )
 
-ActionLink.defaultProps = {
+NXActionLink.defaultProps = {
   variant: 'action'
 }
-export default ActionLink
+export default NXActionLink

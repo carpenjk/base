@@ -28,10 +28,10 @@ const StyledA = styled.a`
     outline: 1px solid ${({ theme }) => theme.colors.action[1]};
   }
 `
-const OverlayNavLink = ({ children, href }) => (
+const NXOverlayNavLink = ({ children, href }) => (
   <Link href={href} passHref>
     <StyledA>{children}</StyledA>
   </Link>
 )
 
-export default OverlayNavLink
+export default NXOverlayNavLink
