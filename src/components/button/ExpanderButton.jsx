@@ -43,13 +43,13 @@ const StyledButton = styled.button`
     font-weight: ${getFontWeight('button.expander_strong', 'bold')};
   `}
 `
-const MoreButton = (props) => {
-  const { innerRef, isExpanded, text, ...remProps } = props
+const ExpanderButton = (props) => {
+  const { innerRef, isExpanded, children, ...remProps } = props
   return (
     <StyledButton {...remProps} ref={innerRef} type="button" tabIndex="0">
-      {isExpanded ? `- ${text}` : `+ ${text}`}
+      {isExpanded ? `- ${children}` : `+ ${children}`}
     </StyledButton>
   )
 }
 
-export default MoreButton
+export default ExpanderButton
