@@ -1,5 +1,5 @@
 export { default as ActionButton } from './components/button/ActionButton'
-export { default as ActionLInk } from './components/button/NXActionLink'
+export { default as NXActionLink } from './components/button/NXActionLink'
 export { default as NXBackButton } from './components/button/NXBackButton'
 export { default as CloseButton } from './components/button/CloseButton'
 export { default as DropDownIncrArrow } from './components/button/DropDownIncrArrow'
