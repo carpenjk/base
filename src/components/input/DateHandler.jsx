@@ -14,7 +14,6 @@ import {
 } from '@carpenjk/themeweaver'
 import { getProp, breakpoint } from '@carpenjk/prop-x/css'
 import DatePicker from 'react-datepicker'
-// import 'react-datepicker/dist/react-datepicker.css'
 import InputLabel from './InputLabel'
 import InputWrapper from './InputWrapper'
 import InsetPlaceholder from './InsetPlaceholder'
@@ -28,7 +27,6 @@ const StyledDateHandler = styled.div`
   .react-datepicker-popper {
     position: relative;
     z-index: 99999;
-    tabIndex="0";
   }
   .react-datepicker-wrapper {
     height:100%;
@@ -185,16 +183,6 @@ class DateHandler extends Component {
     }
   }
 
-  // custom "popper" calendar popup container for react-datepicker
-  // PopperContainer = ({ children }) => {
-  //   console.log('popper parent');
-  //   const { popperParent } = this.props;
-  //   if (popperParent && popperParent.current) {
-  //     return createPortal(children, popperParent.current);
-  //   }
-  //   return null;
-  // };
-
   render () {
     const {
       id,
@@ -208,7 +196,7 @@ class DateHandler extends Component {
       showInsetPlaceholder,
       inputRef,
       tw,
-      ...remProps
+      ...passProps
     } = this.props
 
     const { isActive } = this.state
@@ -240,7 +228,7 @@ class DateHandler extends Component {
               )}
 
               <DatePicker
-                {...remProps}
+                {...passProps}
                 id={id}
                 onBlur={(e) => this.handleBlur(e)}
                 onKeyDown={(e) => this.handleKeyDown(e)}

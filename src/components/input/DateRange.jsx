@@ -1,12 +1,11 @@
-import { Component, createRef } from 'react'
+import React, { Component, createRef } from 'react'
 import DateHandler from './DateHandler'
 
 class DateRange extends Component {
   constructor (props) {
     super(props)
 
-    const { startProps, endProps, valueFunctions } = props
-    const { get } = valueFunctions
+    const { startProps, endProps } = props
     this.state = {
       startDate: {
         id: startProps.id,
@@ -84,7 +83,8 @@ class DateRange extends Component {
       forceClose,
       showInsetPlaceholder,
       showLabel,
-      tw
+      tw,
+      ...passProps
     } = this.props
 
     const isTwAry = Array.isArray(tw)
@@ -109,6 +109,7 @@ class DateRange extends Component {
       <>
         {/* Picker for start of range */}
         <DateHandler
+          {...passProps}
           tw={twStartDate}
           filterDate={filterStartDate}
           key="startDate"
@@ -132,11 +133,11 @@ class DateRange extends Component {
           onFocus={onFocus}
           inputRef={startDate.ref}
           allowSameDay
-          // popperParent={popperParent}
           forceClose={forceClose}
         />
         {/* Picker for end of range */}
         <DateHandler
+          {...passProps}
           tw={twEndDate}
           allowSameDay={false}
           filterDate={filterEndDate}
@@ -162,7 +163,6 @@ class DateRange extends Component {
           onChange={this.handleEndChange}
           onFocus={onFocus}
           inputRef={endDate.ref}
-          // popperParent={popperParent}
           forceClose={forceClose}
         />
       </>
