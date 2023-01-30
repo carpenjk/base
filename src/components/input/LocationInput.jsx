@@ -8,7 +8,7 @@ import { getLocationDisplay } from '../../utils/location'
 const LocationInput = forwardRef(
   ({ name, autoCompleteOptions, ...props }, ref) => {
     const { setFieldValue } = useFormikContext()
-    const [formikFields, meta, helpers] = useField(name)
+    const [formikFields] = useField(name)
     const [acValues, setAcValues] = useState([])
     const inputRef = useRef()
 
@@ -57,11 +57,11 @@ const LocationInput = forwardRef(
       }
     }, [inputRef, ref])
 
-    const { forceClose, autoCompleteWidth } = autoCompleteOptions
+    const { forceClose, autoCompleteWidth, debounceInterval = 500 } = autoCompleteOptions
     const { fields: acFields, autoComplete } = useAutoComplete({
       values: acValues,
       onSelect,
-      onInput: [handleInput, 750]
+      onInput: [handleInput, debounceInterval]
     })
 
     const { acControl } = autoComplete
