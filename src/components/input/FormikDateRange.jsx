@@ -79,7 +79,8 @@ class FormikDateRange extends Component {
       showInsetPlaceholder,
       showLabel,
       tw,
-      values
+      values,
+      ...passProps
     } = this.props
 
     const isTwAry = Array.isArray(tw)
@@ -117,6 +118,7 @@ class FormikDateRange extends Component {
             }
             return (
               <DateHandler
+                {...passProps}
                 tw={twStartDate}
                 filterDate={filterStartDate}
                 key="startDate"
@@ -159,6 +161,7 @@ class FormikDateRange extends Component {
             // Picker for start of range
             return (
               <DateHandler
+                {...passProps}
                 tw={twEndDate}
                 allowSameDay={false}
                 filterDate={filterEndDate}
