@@ -39,7 +39,6 @@ margin-left: ${(props) => getMarginLeft(`date.${props.variant}`, '0')(props)};
 .react-datepicker-popper {
   position: relative;
   z-index: 99999;
-  tabIndex="0";
 }
 .react-datepicker-wrapper {
   width: 100%;

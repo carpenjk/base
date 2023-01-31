@@ -57,12 +57,16 @@ const StyledDateHandler = styled.div`
 
   ${breakpoint(1)`
     width: 100%;
-
     .react-datepicker-wrapper {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+    }
+
+    ${/* same as ract-datepicker__input-container. Class name missing with withPortal prop */''}
+    > div {
+      height:100%;
     }
 
     .react-datepicker__input-container {
