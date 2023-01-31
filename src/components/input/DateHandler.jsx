@@ -33,6 +33,11 @@ const StyledDateHandler = styled.div`
     width: 100%;
     box-sizing: border-box;
   }
+
+  ${/* same as react-datepicker__input-container. Class name missing with withPortal prop */''}
+  > div {
+    height:100%;
+  }
   .react-datepicker__input-container {
     height: 100%;
     width:100%;
@@ -64,7 +69,7 @@ const StyledDateHandler = styled.div`
       justify-content: flex-end;
     }
 
-    ${/* same as ract-datepicker__input-container. Class name missing with withPortal prop */''}
+    ${/* same as react-datepicker__input-container. Class name missing with withPortal prop */''}
     > div {
       height:100%;
     }
