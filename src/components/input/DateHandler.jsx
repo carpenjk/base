@@ -35,7 +35,7 @@ const StyledDateHandler = styled.div`
   }
 
   ${/* same as react-datepicker__input-container. Class name missing with withPortal prop */''}
-  > div {
+  > div > div {
     height:100%;
   }
   .react-datepicker__input-container {
@@ -70,7 +70,7 @@ const StyledDateHandler = styled.div`
     }
 
     ${/* same as react-datepicker__input-container. Class name missing with withPortal prop */''}
-    > div {
+    > div > div {
       height:100%;
     }
 
