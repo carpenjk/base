@@ -11,6 +11,7 @@ const StyledCard = styled.div`
   border: 1px solid #cdf7f6;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: transform 300ms ease-in-out;
 
   ${condition('inactive')`
     opacity: 0.4;
@@ -21,6 +22,7 @@ const StyledCard = styled.div`
     outline: none;
     ${condition('scaleOnFocus')`
       transform: scale(${getProp('scale')});
+
     `}
   }
 
@@ -34,6 +36,7 @@ const StyledCard = styled.div`
     &:focus {
       ${condition('scaleOnFocus')`
         transform: scale(${getProp('scale')});
+        
       `}
     }
   
